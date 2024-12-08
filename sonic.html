@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Sobre Dreamcast</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+    <div class="cabecalho">
+      <div class="row">
+
+      </div>
+    </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class= "col-md-12 col-sm-4">
+          <nav class="navbar navbar-expand-lg  navbar-light ">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                <nav class="navbar navbar-expand-lg bg-dark">
+                  <li class="nav-item1">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg bg-primary">
+                  <li class="nav-item2">
+                    <a class="nav-link" href="sonic.html">sonic</a>
+                  </li>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg bg-warning">
+                  <li class="nav-item3">
+                    <a class="nav-link" href="tails.html">Tails</a>
+                  </li>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg bg-danger">
+                  <li class="nav-item4">
+                    <a class="nav-link" href="knucles.html">Knuckles</a>
+                  </li>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg bg-success">
+                  <li class="nav-item5">
+                    <a class="nav-link" href="https://criticalhits.com.br/games/50-melhores-jogos-dreamcast/" target="blank">Jogos</a>
+                  </li>
+                </nav>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="nav-texto1">
+          <div class="row">
+              <div class="col-md-12 col-sm-4">
+                <p>Sonic the Hedgehog é um ouriço azul nascido em Green Hill, na South Island. Lá ele vive e tem muitos amigos. Desde pequeno sempre foi famoso por ser um pouco diferente: ser o mais veloz dos animais da floresta! O Sonic vive num mundo cheio de animais, e sustentado pelo poder de pedras especiais, as Chaos Emerald. As Chaos Emerald (ou Esmeraldas do Caos, ou simplesmente Esmeralda Caóticas) são uma poderosa e misteriosa fonte de poder.</p>              </div>
+                <p>  Dr Robotnik, ou Dr Eggman, um maluco cientista, resolveu dominar o mundo do Sonic. Para tal, ele raptou todos os animais, para transformá-los em robôs, compondo um poderoso e grande exército, através do qual ele irá dominar o planeta, e para isso, as Chaos Emerald são fundamentais.</p>
+                <p>Porém, Sonic, por ser muito rápido, conseguiu se livrar. Foi assim que ele sozinho ganhou a importante missão de destruir todos os robôs de Robotnik, recuperar o seu mundo, pegar de volta as Chaos Emerald, e desta forma garantir a paz de volta!</p>
+                <p>Para Sonic poder competir com Robotnik, ele também precisaria de alguma força. Essa força está concentrada nos anéis espalhados pelo Planeta. Desta forma, o Sonic destruiu todos os principais robôs de Robotnik, recuperando a paz pela ilha.</p>
+             </div>
+     </div>
+
+        <div class="miniatura">
+            <img src="sonic tais knucles/sonic_1.gif">
+        </div>
+
+        <div class="miniatura">
+            <img src="sonic tais knucles/sonic_2.gif">
+        </div>
+
+        <div class="miniatura">
+            <img src="sonic tais knucles/sonic_3.gif">
+        </div>
+
+    </div>
+
+    <audio id="musicaFundo" autoplay loop>
+        <source src="musica tema/Sonic Adventure (Open Your Heart).mp3" type="audio/mp3">
+    </audio>
+  
+    <audio id="nav-item1" src="barulho-aneis-sonic.mp3"></audio>
+    <audio id="nav-item2" src="barulho-aneis-sonic.mp3"></audio>
+    <audio id="nav-item3" src="barulho-aneis-sonic.mp3"></audio>
+    <audio id="nav-item4" src="barulho-aneis-sonic.mp3"></audio>
+    <audio id="nav-item5" src="barulho-aneis-sonic.mp3"></audio>
+  
+    <script>
+  
+        const items = [
+            { element: document.querySelector('.nav-item1'), sound: document.getElementById('nav-item1') },
+            { element: document.querySelector('.nav-item2'), sound: document.getElementById('nav-item2') },
+            { element: document.querySelector('.nav-item3'), sound: document.getElementById('nav-item3') },
+            { element: document.querySelector('.nav-item4'), sound: document.getElementById('nav-item4') },
+            { element: document.querySelector('.nav-item5'), sound: document.getElementById('nav-item5') }
+        ];
+  
+  
+        items.forEach(({ element, sound }) => {
+            element.addEventListener('mouseover', () => {
+                sound.currentTime = 0; 
+                sound.play();
+            });
+        });
+  
+  
+    </script>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>

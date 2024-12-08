@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Sobre Dreamcast</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+    <div class="cabecalho">
+      <div class="row">
+
+      </div>
+    </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-4">
+          <nav class="navbar navbar-expand-lg  navbar-light ">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                <nav class="navbar navbar-expand-lg bg-dark">
+                  <li class="nav-item1">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg bg-primary">
+                  <li class="nav-item2">
+                    <a class="nav-link" href="sonic.html">sonic</a>
+                  </li>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg bg-warning">
+                  <li class="nav-item3">
+                    <a class="nav-link" href="tails.html">Tails</a>
+                  </li>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg bg-danger">
+                  <li class="nav-item4">
+                    <a class="nav-link" href="knucles.html">Knuckles</a>
+                  </li>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg bg-success">
+                  <li class="nav-item5">
+                    <a class="nav-link" href="https://criticalhits.com.br/games/50-melhores-jogos-dreamcast/" target="blank">Jogos</a>
+                  </li>
+                </nav>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="nav-texto2">
+        <div class="row">
+              <div class="col-md-12 col-sm-4">
+                    <p>A primeira aparição de Knuckles aconteceu no game Sonic The Hedhegod 3, lançado em 1994 para o Mega Drive. Manipulado por Eggman a pensar que Sonic tentaria roubar a Esmeralda Mestre, ele passa a agir como um antagonista, até finalmente descobrir a verdade e se unir ao ouriço azul.</p>
+                    <p>Knuckles foi criado por Takashi Yuda, que nunca teve a intenção de que ele fosse nada além de um simples personagem de apoio. Mas para sua surpresa, o personagem foi mais bem aceito pelo público do que ele esperava, aparecendo em dezenas de jogos posteriores.</p>
+                    <p>Como dito anteriormente, Knuckles é o último echidna, uma outrora poderosa raça de xamãs e guerreiros. Seu clã, o clã Knuckles, vivia nas montanhas místicas há 4 mil anos, protegendo a Esmeralda Mestre e as Esmeraldas do Caos, até que um grande cataclismo se abateu sobre todos.</p>
+                    <p>Quando Pachacamac, o chefe de seu clã, tentou roubar as esmeraldas, se clã foi quase todo aniquilado, e os membros sobreviventes dedicaram suas vidas a protegerem esse poder para que isso não ocorresse novamente. Eventualmente, todos morreram, até restar apenas Knuckles.</p>
+                </div>
+            </div>
+    
+        <div class="miniatura">
+            <img src="sonic tais knucles/knucles_2.gif">
+        </div>
+
+        <div class="miniatura">
+            <img src="sonic tais knucles/knuckles_4.gif">
+        </div>
+
+        <div class="miniatura">
+            <img src="sonic tais knucles/knuckles_3.gif">
+        </div>
+
+    </div>
+
+    <audio id="musicaFundo" autoplay loop>
+        <source src="musica tema/Sonic Adventure (Open Your Heart).mp3" type="audio/mp3">
+    </audio>
+  
+    <audio id="nav-item1" src="barulho-aneis-sonic.mp3"></audio>
+    <audio id="nav-item2" src="barulho-aneis-sonic.mp3"></audio>
+    <audio id="nav-item3" src="barulho-aneis-sonic.mp3"></audio>
+    <audio id="nav-item4" src="barulho-aneis-sonic.mp3"></audio>
+    <audio id="nav-item5" src="barulho-aneis-sonic.mp3"></audio>
+  
+    <script>
+  
+        const items = [
+            { element: document.querySelector('.nav-item1'), sound: document.getElementById('nav-item1') },
+            { element: document.querySelector('.nav-item2'), sound: document.getElementById('nav-item2') },
+            { element: document.querySelector('.nav-item3'), sound: document.getElementById('nav-item3') },
+            { element: document.querySelector('.nav-item4'), sound: document.getElementById('nav-item4') },
+            { element: document.querySelector('.nav-item5'), sound: document.getElementById('nav-item5') }
+        ];
+  
+  
+        items.forEach(({ element, sound }) => {
+            element.addEventListener('mouseover', () => {
+                sound.currentTime = 0; 
+                sound.play();
+            });
+        });
+  
+  
+    </script>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>
